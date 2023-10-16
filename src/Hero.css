@@ -1,0 +1,73 @@
+/*Hero section*/
+
+.hero-section {
+    background-size: cover;
+    height: 400px;
+    overflow: hidden;
+    ;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: flex-end; */
+}
+
+/* .hero-img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 1px;
+    position: relative;
+
+      
+} */
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transition: 2second 0;
+    transition-delay: 1sec;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+    padding: 10px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+button i {
+    font-size: 30px;
+}
+
+#prv-btn {
+    height: 50px;
+
+}
+
+#nxt-btn {
+    height: 50px;
+}
+
+.hero-msg {
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+
+}
+
+.hero-msg a {
+    color: #007185
+}
