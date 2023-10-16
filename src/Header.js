@@ -53,8 +53,8 @@ function Header() {
             </div>
 
             <div class="nav-cart border">
-                <i class="fa-solid fa-cart-shopping"></i>
-                Cart
+                <i class="fa-solid fa-cart-shopping" ></i>
+                <span>0</span> Cart 
             </div>
         </div>
 

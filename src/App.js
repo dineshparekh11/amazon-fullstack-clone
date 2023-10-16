@@ -1,7 +1,9 @@
 import './App.css';
+import Footer from './Footer';
 import Header from './Header.js';
 import Hero from './Hero.js';
-import Shop from './Shop';
+import Product from './Product';
+import Shop from './Shop.js';
 
 
 function App() {
@@ -10,8 +12,9 @@ function App() {
     <div className="App">
     <Header />
     <Hero />  
-    {/* <Shop /> */}
-
+    <Shop />
+    <Product />
+    <Footer />
     </div>
   );
 }

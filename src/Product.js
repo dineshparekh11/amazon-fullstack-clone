@@ -1,8 +1,17 @@
 import React from 'react';
-import './Shop.css';
+import "./Product.css";
 
-function Shop() {
+function Product() {
   return (
+    <div>
+    <div className="product">
+        <p>Frequently repurchased in Drugstore</p>
+        <div className="product_info1">
+        </div>
+
+        
+    </div>
+    
     <div>
         <div className="shop-section">
         <div className="box">
@@ -63,20 +72,11 @@ function Shop() {
             </div>
         </div>
 
-        <div className="home_row">
-
-        </div>
-
-        <div className="home_row">
-            
-        </div>
-
-        <div className="home_row">
-            
-        </div>
+        
+    </div>
     </div>
     </div>
   )
 }
 
-export default Shop
+export default Product

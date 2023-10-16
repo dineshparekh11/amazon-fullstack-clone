@@ -121,6 +121,10 @@ span {
     justify-content: space-evenly;
 }
 
+.panel-all{
+    width: 2px;
+}
+
 .panel-ops p {
     display: inline;
     margin-left: 15px;
