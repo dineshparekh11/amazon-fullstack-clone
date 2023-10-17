@@ -64,7 +64,7 @@ function Shop() {
         </div>
 
         <div className="home_row">
-
+            
         </div>
 
         <div className="home_row">

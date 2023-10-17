@@ -1,76 +1,114 @@
 import React from 'react';
 import "./Product.css";
 
-function Product() {
+function Product({id, title, image, price, rating}) {
   return (
     <div>
-    <div className="product">
-        <p>Frequently repurchased in Drugstore</p>
-        <div className="product_info1">
-        </div>
-
-        
-    </div>
     
     <div>
         <div className="shop-section">
         <div className="box">
             <div className="box-content" href="https://google.com">
-                <h2>Health & Personal Care</h2>
+                <p>{title}</p>
+                <p className="product_price"> <small>INR</small> <strong>{price}</strong></p>
+                <div className="product_rating">
+                    {Array(rating).fill().map((_, i) => (
+                    <p><i class="fa-solid fa-star"></i></p>
+                   ))}
+                </div>
+                
+                <div className="box-img1" >{image}</div>
+                <button>Add to basket</button>
+                
+            </div>
+        </div>
+        <div className="box">
+        <div className="box-content" href="https://google.com">
+                <p>{title}</p>
+                <p className="product_price"> <small>INR</small> <strong>{price}</strong></p>
+                <div className="product_rating">
+                    {Array(rating).fill().map((_, i) => (
+                    <p><i class="fa-solid fa-star"></i></p>
+                   ))}
+                </div>
                 <div className="box-img2" ></div>
-                <p>See more</p>
+                <button>Add to basket</button>
+
             </div>
         </div>
         <div className="box">
-            <div className="box-content">
-                <h2>Cloths</h2>
-                <div className="box-img1" ></div>
-                <p>See more</p>
+        <div className="box-content" href="https://google.com">
+                <p>Best Chair</p>
+                <p className="product_price"> <small>INR</small> <strong>1390</strong></p>
+                <div className="product_rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>                
+                </div>
+                <div className="box-img3" ></div>
+                <button>Add to basket</button>
+
             </div>
         </div>
         <div className="box">
-            <div className="box-content">
-                <h2>Furniture</h2>
-                <div className="box-img3"></div>
-                <p>See more</p>
-            </div>
-        </div>
-        <div className="box">
-            <div className="box-content">
-                <h2>Electronics</h2>
-                <div className="box-img4"></div>
-                <p>See more</p>
+        <div className="box-content" href="https://google.com">
+                <p>OnePlus Nord N30 5G | Unlocked Dual-SIM</p>
+                <p className="product_price"> <small>INR</small> <strong>14340</strong></p>
+                <div className="product_rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>                
+                </div>
+                <div className="box-img4" ></div>
+                <button>Add to basket</button>
+
             </div>
         </div>
 
-        <div className="box">
-            <div className="box-content">
-                <h2>Beauty Picks</h2>
+        {/* <div className="box">
+        <div className="box-content" href="https://google.com">
+                <p>Make up kit new trending</p>
+                <p className="product_price"> <small>INR</small> <strong>3299</strong></p>
+                <div className="product_rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>                
+                </div>
                 <div className="box-img5" ></div>
-                <p>See more</p>
+                <button>Add to basket</button>
+
             </div>
-        </div>
-        <div className="box">
-            <div className="box-content">
-                <h2>Pet Care</h2>
+        </div> */}
+        {/* <div className="box">
+        <div className="box-content" href="https://google.com">
+                <p>Pet food best for health</p>
+                <p className="product_price"> <small>INR</small> <strong>1230</strong></p>
+                <div className="product_rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>                
+                </div>
                 <div className="box-img6" ></div>
-                <p>See more</p>
+                <button>Add to basket</button>
+
             </div>
-        </div>
-        <div className="box">
-            <div className="box-content">
-                <h2>New Arrival in Toys</h2>
+        </div> */}
+        {/* <div className="box">
+        <div className="box-content" href="https://google.com">
+                <p>Baby safe rubber toy's</p>
+                <p className="product_price"> <small>INR</small> <strong>2300</strong></p>
+                <div className="product_rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>                
+                </div>
                 <div className="box-img7" ></div>
-                <p>See more</p>
+                <button>Add to basket</button>
+
             </div>
-        </div>
-        <div className="box">
-            <div className="box-content">
-                <h2>Discover Fasion Trends</h2>
+        </div> */}
+        {/* <div className="box">
+        <div className="box-content" href="https://google.com">
+                <p>Kurties for girls</p>
+                <p className="product_price"> <small>INR</small> <strong>1300</strong></p>
+                <div className="product_rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>                
+                </div>
                 <div className="box-img8" ></div>
-                <p>See more</p>
+                <button>Add to basket</button>
+
             </div>
-        </div>
+        </div> */}
 
         
     </div>
